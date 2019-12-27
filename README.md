@@ -1,3 +1,5 @@
+Link to website - https://zonzujiro.github.io/kottans_website/
+
 #How to use
 
 Clone this repo and then in command line type:
