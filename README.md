@@ -1,7 +1,6 @@
-Link to website - https://zonzujiro.github.io/kottans_website/
-Designs:
+### Designs:
 1. https://www.figma.com/file/0SyY1BtTeON6Zp1QoyLecT/kottans_site_v1.2?node-id=0%3A2
-2. https://www.figma.com/proto/0SyY1BtTeON6Zp1QoyLecT/kottans_site_v1.2?node-id=0%3A2&scaling=min-zoom
+2. https://www.figma.com/file/JfoY8Yf8PwlcN0c2jzRfHH/kottans-mob-v0.1?node-id=0%3A2
 
 
 # How to use
