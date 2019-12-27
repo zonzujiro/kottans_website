@@ -1,0 +1,147 @@
+{% set
+core = [
+  {
+    img: 'such.jpg',
+    name: 'Artem Suchov',
+    position: 'Technical manager',
+    github: 'suchov',
+    twitter: 'ArtemSuchov',
+    linkedin: 'https://www.linkedin.com/in/suchov/'
+  },
+  {
+    img: 'ivan.jpeg',
+    name: 'Ivan Tytarenko',
+    position: 'Front-end developer',
+    github: 'zonzujiro',
+    twitter: 'zonzuJIro',
+    linkedin: 'https://www.linkedin.com/in/ititarenko/'
+  },
+  {
+    img: 'nastia.jpeg',
+    name: 'Anastasiya Mashoshyna',
+    position: 'Fullstack developer',
+    github: 'AMashoshyna',
+    twitter: 'a_mashoshyna',
+    slogan: true,
+    linkedin: 'https://www.linkedin.com/in/anastasiya-mashoshyna-33711682/'
+  },
+  {
+    img: 'oleksiy-rudenko.jpg',
+    name: 'Oleksiy Rudenko',
+    position: 'Delivery Manager',
+    github: 'OleksiyRudenko',
+    linkedin: 'https://www.linkedin.com/in/oleksiyrudenko'
+  },
+  {
+    img: 'crofty_land.jpeg',
+    name: 'Khrystyna Landvytovych',
+    position: 'Front-end developer',
+    github: 'Croftyland',
+    twitter: 'croftyland',
+    linkedin: 'https://www.linkedin.com/in/christina-landvytovych-a86243132/'
+  }
+]
+%}
+<section class="section section--core" id="core">
+  <div class="container">
+    <aside class="section__sidebar">
+      <div class="sidebar--content">
+        <h2>
+          <p>Kottans</p>
+          <p>core</p>
+        </h2>
+        {% include "partials/_menu.html" %}
+      </div>
+    </aside>
+    <div class="section__content">
+      <div class="core">
+        <div class="core__tabsWrapper">
+          <div class="core__tabs js-core__tabs">
+            <button class="core__tabsButton js-core__tabsButton core__tabsButton--isActive core__tabsButton--team"
+              data-tab-name="tab-team">
+              Our team
+            </button>
+
+            <button class="core__tabsButton js-core__tabsButton core__tabsButton--guest" data-tab-name="tab-guest">
+              Guest mentors
+            </button>
+          </div>
+          <div class="core__tabsContentWrapper">
+            <div id="tab-team"
+              class="core__tabsContent core__tabsContent--isActive js-core__tabsContent tab-team core__tabsContent--team">
+              <p>
+                Anyone who finished courses and part of our day-to-day activity considered as <strong>Kottan</strong>. 
+                Because of volontier nature, we pretty flexible and number of people can change - some can come, other - go.
+              </p>
+              <p>
+                Also we have Core, which consists from most active ones. To become one of Core, one must 
+                take responsibility on itself, generate ideas and be active part of our community.
+              </p>
+            </div>
+            <div id="tab-guest" class="core__tabsContent js-core__tabsContent tab-guest core__tabsContent--guest">
+              <p>
+                Guest mentors is participants which comes to us to read lectures, conduct a workshop or else.
+                Usually, we trying to find mentor according to level of knowledge level of lecture.
+              </p>
+              <p>
+                So even if you a beginner - anyway you know more, then trainees or students, who don't know nothing at all. 
+                Also, you closer to problems of newbies, because you haven't forgot how it is. :)
+              </p>
+            </div>
+          </div>
+        </div>
+
+        {% for member in core %}
+
+        <div class="core__member">
+          <div class="core__memberInner">
+            <div class="core__memberSocials">
+              {% if member.github %}
+              <a href="https://github.com/{{member.github}}" class="core__memberLink">
+                {{github|safe}}
+              </a>
+              {% endif %}
+              {% if member.twitter %}
+              <a href="https://twitter.com/{{member.twitter}}" class="core__memberLink">
+                {{twitter|safe}}
+              </a>
+              {% endif %}
+              {% if member.linkedin %}
+              <a href="{{member.linkedin}}" class="core__memberLink">
+                {{linkedin|safe}}
+              </a>
+              {% endif %}
+            </div>
+
+            <img src="img/mentors/{{member.img}}" alt="{{member.name}}}" class="core__avatar">
+            <p class="core__name">
+              <span>
+                {{member.name}}
+              </span>
+            </p>
+            <p class="core__position">
+              <span>
+                {{member.position}}
+              </span>
+            </p>
+          </div>
+        </div>
+
+        {% if member.slogan %}
+        <div class="core__slogan">
+          <p>
+            If you feel the strength to share knowledge with others, come join us
+          </p>
+          <div class="header__contact">
+            <a href="mailto:kottans.org@gmail.com" class="header__contactLink">Join the kottans</a>
+          </div>
+        </div>
+        {% endif %}
+        {% endfor %}
+
+      </div>
+
+      {% include "partials/_mentors.html" %}
+    </div>
+  </div>
+</section>
