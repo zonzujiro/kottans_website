@@ -1,6 +1,10 @@
 Link to website - https://zonzujiro.github.io/kottans_website/
+Designs:
+1. https://www.figma.com/file/0SyY1BtTeON6Zp1QoyLecT/kottans_site_v1.2?node-id=0%3A2
+2. https://www.figma.com/proto/0SyY1BtTeON6Zp1QoyLecT/kottans_site_v1.2?node-id=0%3A2&scaling=min-zoom
 
-#How to use
+
+# How to use
 
 Clone this repo and then in command line type:
 
