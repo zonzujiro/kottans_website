@@ -14,10 +14,10 @@ const selectActiveItems = () => {
 
 const handleMenu = () => {
   const hamburgerButton = document.querySelector('#hamburger');
-  const menuWrapper = document.querySelector('.js-menu__list');
+  const menuWrapper = document.querySelector('.js-section__sidebar');
   hamburgerButton.addEventListener('click', () => {
     hamburgerButton.classList.toggle('hamburger--isActive');
-    menuWrapper.classList.toggle('menu__list--isActive');
+    menuWrapper.classList.toggle('section__sidebar--isActive');
   });
 };
 

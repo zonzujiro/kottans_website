@@ -31,8 +31,14 @@
 			left: 15%
 			bottom: 10px
 			width: 595px
-			height: 1px
+			height: 2px
 			background-color: $black
+
+			+r(767)
+				left: 100px
+				bottom: 50%
+				transform: translateY(50%)
+				width: calc(100vw - 150px)
 
 .mentor__wrapper
 	padding: 0 11px

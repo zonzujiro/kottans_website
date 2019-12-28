@@ -9,20 +9,17 @@
 	margin-bottom: 250px
 
 	+r(767)
+		position: relative
+		z-index: 10
 		background-color: $white
 		transform: translateX(100%)
 		text-align: left
 		bottom: auto
-		top: 100px
 		left: 0
 		padding-left: 20px
 		width: 100vw
 		height: 100vh
 		margin-left: 0
-
-
-.menu__list--isActive
-	transform: translateX(0)
 
 .menu__item
 	overflow: hidden
@@ -88,9 +85,5 @@
 
 	&:hover
 		text-decoration: underline
-
-//Open menu
-.menu__list--isActive
-
 
 @import hamburger

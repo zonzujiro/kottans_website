@@ -7,6 +7,7 @@ body
 html
 	-ms-overflow-style: none
 	scrollbar-width: none
+	scroll-behavior: smooth
 
 	&::-webkit-scrollbar
 		width: 0
@@ -33,6 +34,9 @@ html
 
 .mainWrapper
 	position: relative
+
+	+r(767)
+		margin-top: 150px
 
 button
 	position: relative
