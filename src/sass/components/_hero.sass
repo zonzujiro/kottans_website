@@ -5,6 +5,7 @@
 		+r(767)
 			position: fixed
 			top: 100px
+			z-index: -1
 
 		.menu__list
 			margin-top: 250px;
@@ -24,13 +25,12 @@
 		+r(767)
 			background-image: none
 
-.section__sidebar--isActive
-	+r(767)
-		z-index: 10
+	.section__sidebar--isActive
+		+r(767)
+			z-index: 10
 
-	.menu__list
-		transform: translateX(0)
-
+		.menu__list
+			transform: translateX(0)
 
 .hero__slogan
 	font-size: 20px
