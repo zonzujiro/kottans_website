@@ -68,7 +68,6 @@
     "webpack-cli": "^3.3.0"
   },
   "dependencies": {
-    "tiny-slider": "^2.9.2",
     "typed.js": "^2.0.10"
   }
 }

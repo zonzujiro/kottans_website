@@ -58,45 +58,43 @@
       <div class="review">
         <div class="review__feedWrapper">
           <div class="review__text">
-              <h3>What People are Saying</h3>
+            <h3>What People are Saying</h3>
           </div>
-          <div class="review__feed">
-              {% for data in list %}
-              <div class="review__item" data-id="{{loop.index}}">
-                <div class="review__avatarWrapper">
-                  <img src="img/alumni/{{data.img}}" alt="{{data.name}}}" class="review__avatar">
-                </div>
-                <div class="review__textWrapper">
-                  <p class="review__text">
-                    {{data.text1}}
-                  </p>
-                  <p class="review__text">
-                    {{data.text2}}
-                  </p>
-                  {% if data.text3 %}
-                    <p class="review__text">
-                      {{data.text3}}
-                    </p>
-                  {% endif %}
-                  <p class="review__name">
-                    {{data.name}}
-                  </p>
-                  <p class="review__position">
-                    {{data.company}}
-                  </p>
-                </div>
+          <div class="review__feed collapsed__text" data-collapsed-text="reviews">
+            {% for data in list %}
+            <div class="review__item" data-id="{{loop.index}}">
+              <div class="review__avatarWrapper">
+                <img src="img/alumni/{{data.img}}" alt="{{data.name}}}" class="review__avatar">
               </div>
-              {% endfor %}
+              <div class="review__textWrapper">
+                <p class="review__text">
+                  {{data.text1}}
+                </p>
+                <p class="review__text">
+                  {{data.text2}}
+                </p>
+                {% if data.text3 %}
+                <p class="review__text">
+                  {{data.text3}}
+                </p>
+                {% endif %}
+                <p class="review__name">
+                  {{data.name}}
+                </p>
+                <p class="review__position">
+                  {{data.company}}
+                </p>
+              </div>
+            </div>
+            {% endfor %}
           </div>
         </div>
         <div class="review__feedPagination">
-          <button class="review__button review__button--prev"></button>
-          <ul>
-            <li>01</li>
-            <li class="review__current">01</li>
-            <li>0{{list.length}}</li>
-          </ul>
-          <button class="review__button review__button--next"></button>
+          <div class="buttonWrapper">
+            <button class="read-more" data-parent="reviews">
+              Read more
+            </button>
+          </div>
         </div>
       </div>
     </div>

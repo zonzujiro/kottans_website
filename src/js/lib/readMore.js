@@ -1,9 +1,20 @@
-function readMore() {
-  const readMoreButton = document.getElementById('readMore-about');
-  const readMoreContainer = document.querySelector('.about__text');
+const handleReadMoreClick = () => {
+  document.addEventListener('click', ({ target }) => {
+    if (target.classList.contains('read-more')) {
+      const textContainer = document.querySelector(
+        `[data-collapsed-text='${target.dataset.parent}']`
+      );
 
-  readMoreButton.addEventListener('click', () => {
-    readMoreContainer.classList.toggle('about__text--show');
+      if (textContainer) {
+        textContainer.classList.toggle('collapsed__text--show');
+
+        if (textContainer.classList.contains('collapsed__text--show')) {
+          target.innerHTML = 'Hide';
+        } else {
+          target.innerHTML = 'Read more';
+        }
+      }
+    }
   });
-}
-module.exports = readMore;
+};
+module.exports = handleReadMoreClick;
