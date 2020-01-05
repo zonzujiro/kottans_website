@@ -9,7 +9,6 @@
     <meta name="format-detection" content="telephone=no" />
     <link rel="stylesheet" media="all" href="css/app.css" />
     <link rel='shortcut icon' href='img/favicon.ico' type='image/x-icon' />
-    <meta name="theme-color" content="#fff" />
     <!-- Windows Phone -->
     <meta name="msapplication-navbutton-color" content="#fff" />
     <!-- iOS Safari -->
@@ -86,20 +85,20 @@
               </li>
             </ul>
           </div>
+          <div class="hamburgerWrapper">
+            <button class="hamburger" id="hamburger">
+              <span class="hamburger__item"></span>
+              <span class="hamburger__item"></span>
+              <span class="hamburger__item"></span>
+            </button>
+          </div>
         </div>
       </header>
       <main class="mainWrapper">
         <section class="hero content-wrapper" id="hero">
           <div class="container">
-            <aside class="section__sidebar">
+            <aside class="section__sidebar js-section__sidebar">
               <nav class="menu">
-                <div class="hamburgerWrapper">
-                  <button class="hamburger" id="hamburger">
-                    <span class="hamburger__item"></span>
-                    <span class="hamburger__item"></span>
-                    <span class="hamburger__item"></span>
-                  </button>
-                </div>
                 <ul class="menu__list js-menu__list" aria-role="list">
                   <li class="menu__item" data-item-parent="hero">
                     <a href="#hero" class="menu__link">Hello World</a>
@@ -119,8 +118,8 @@
                   <li class="menu__item" data-item-parent="core">
                     <a href="#core" class="menu__link">Kottans core</a>
                   </li>
-                  <li class="menu__item" data-item-parent="review">
-                    <a href="#review" class="menu__link">Reviews from graduates</a>
+                  <li class="menu__item" data-item-parent="reviews">
+                    <a href="#reviews" class="menu__link">Reviews from graduates</a>
                   </li>
                   <li class="menu__item" data-item-parent="partners">
                     <a href="#partners" class="menu__link">Our friends &amp; partners</a>
@@ -155,17 +154,12 @@
             <aside class="section__sidebar">
               <div class="sidebar--content">
                 <h2>
-                  <p>About</p>
-                  <p>Kottans</p>
+                  <a class="anchor" href="#about">
+                    <p>About</p>
+                    <p>Kottans</p>
+                  </a>
                 </h2>
                 <nav class="menu">
-                  <div class="hamburgerWrapper">
-                    <button class="hamburger" id="hamburger">
-                      <span class="hamburger__item"></span>
-                      <span class="hamburger__item"></span>
-                      <span class="hamburger__item"></span>
-                    </button>
-                  </div>
                   <ul class="menu__list js-menu__list" aria-role="list">
                     <li class="menu__item" data-item-parent="hero">
                       <a href="#hero" class="menu__link">Hello World</a>
@@ -185,8 +179,8 @@
                     <li class="menu__item" data-item-parent="core">
                       <a href="#core" class="menu__link">Kottans core</a>
                     </li>
-                    <li class="menu__item" data-item-parent="review">
-                      <a href="#review" class="menu__link">Reviews from graduates</a>
+                    <li class="menu__item" data-item-parent="reviews">
+                      <a href="#reviews" class="menu__link">Reviews from graduates</a>
                     </li>
                     <li class="menu__item" data-item-parent="partners">
                       <a href="#partners" class="menu__link">Our friends &amp; partners</a>
@@ -224,17 +218,12 @@
             <aside class="section__sidebar">
               <div class="sidebar--content">
                 <h2>
-                  <p>Our</p>
-                  <p>Courses</p>
+                  <a class="anchor" href="#courses">
+                    <p>Our</p>
+                    <p>Courses</p>
+                  </a>
                 </h2>
                 <nav class="menu">
-                  <div class="hamburgerWrapper">
-                    <button class="hamburger" id="hamburger">
-                      <span class="hamburger__item"></span>
-                      <span class="hamburger__item"></span>
-                      <span class="hamburger__item"></span>
-                    </button>
-                  </div>
                   <ul class="menu__list js-menu__list" aria-role="list">
                     <li class="menu__item" data-item-parent="hero">
                       <a href="#hero" class="menu__link">Hello World</a>
@@ -254,8 +243,8 @@
                     <li class="menu__item" data-item-parent="core">
                       <a href="#core" class="menu__link">Kottans core</a>
                     </li>
-                    <li class="menu__item" data-item-parent="review">
-                      <a href="#review" class="menu__link">Reviews from graduates</a>
+                    <li class="menu__item" data-item-parent="reviews">
+                      <a href="#reviews" class="menu__link">Reviews from graduates</a>
                     </li>
                     <li class="menu__item" data-item-parent="partners">
                       <a href="#partners" class="menu__link">Our friends &amp; partners</a>
@@ -369,13 +358,6 @@
                   </p>
                 </h2>
                 <nav class="menu">
-                  <div class="hamburgerWrapper">
-                    <button class="hamburger" id="hamburger">
-                      <span class="hamburger__item"></span>
-                      <span class="hamburger__item"></span>
-                      <span class="hamburger__item"></span>
-                    </button>
-                  </div>
                   <ul class="menu__list js-menu__list" aria-role="list">
                     <li class="menu__item" data-item-parent="hero">
                       <a href="#hero" class="menu__link">Hello World</a>
@@ -395,8 +377,8 @@
                     <li class="menu__item" data-item-parent="core">
                       <a href="#core" class="menu__link">Kottans core</a>
                     </li>
-                    <li class="menu__item" data-item-parent="review">
-                      <a href="#review" class="menu__link">Reviews from graduates</a>
+                    <li class="menu__item" data-item-parent="reviews">
+                      <a href="#reviews" class="menu__link">Reviews from graduates</a>
                     </li>
                     <li class="menu__item" data-item-parent="partners">
                       <a href="#partners" class="menu__link">Our friends &amp; partners</a>
@@ -504,19 +486,14 @@
             <aside class="section__sidebar">
               <div class="sidebar--content">
                 <h2>
-                  <p>How to</p>
-                  <p>create</p>
-                  <p>your own</p>
-                  <p>events</p>
+                  <a class="anchor" href="#platform">
+                    <p>How to</p>
+                    <p>create</p>
+                    <p>your own</p>
+                    <p>events</p>
+                  </a>
                 </h2>
                 <nav class="menu">
-                  <div class="hamburgerWrapper">
-                    <button class="hamburger" id="hamburger">
-                      <span class="hamburger__item"></span>
-                      <span class="hamburger__item"></span>
-                      <span class="hamburger__item"></span>
-                    </button>
-                  </div>
                   <ul class="menu__list js-menu__list" aria-role="list">
                     <li class="menu__item" data-item-parent="hero">
                       <a href="#hero" class="menu__link">Hello World</a>
@@ -536,8 +513,8 @@
                     <li class="menu__item" data-item-parent="core">
                       <a href="#core" class="menu__link">Kottans core</a>
                     </li>
-                    <li class="menu__item" data-item-parent="review">
-                      <a href="#review" class="menu__link">Reviews from graduates</a>
+                    <li class="menu__item" data-item-parent="reviews">
+                      <a href="#reviews" class="menu__link">Reviews from graduates</a>
                     </li>
                     <li class="menu__item" data-item-parent="partners">
                       <a href="#partners" class="menu__link">Our friends &amp; partners</a>
@@ -611,17 +588,12 @@
             <aside class="section__sidebar">
               <div class="sidebar--content">
                 <h2>
-                  <p>Kottans</p>
-                  <p>core</p>
+                  <a class="anchor" href="#core">
+                    <p>Kottans</p>
+                    <p>core</p>
+                  </a>
                 </h2>
                 <nav class="menu">
-                  <div class="hamburgerWrapper">
-                    <button class="hamburger" id="hamburger">
-                      <span class="hamburger__item"></span>
-                      <span class="hamburger__item"></span>
-                      <span class="hamburger__item"></span>
-                    </button>
-                  </div>
                   <ul class="menu__list js-menu__list" aria-role="list">
                     <li class="menu__item" data-item-parent="hero">
                       <a href="#hero" class="menu__link">Hello World</a>
@@ -641,8 +613,8 @@
                     <li class="menu__item" data-item-parent="core">
                       <a href="#core" class="menu__link">Kottans core</a>
                     </li>
-                    <li class="menu__item" data-item-parent="review">
-                      <a href="#review" class="menu__link">Reviews from graduates</a>
+                    <li class="menu__item" data-item-parent="reviews">
+                      <a href="#reviews" class="menu__link">Reviews from graduates</a>
                     </li>
                     <li class="menu__item" data-item-parent="partners">
                       <a href="#partners" class="menu__link">Our friends &amp; partners</a>
@@ -660,12 +632,12 @@
                   </div>
                   <div class="core__tabsContentWrapper">
                     <div id="tab-team" class="core__tabsContent core__tabsContent--isActive js-core__tabsContent tab-team core__tabsContent--team">
-                      <p> Anyone who finished courses and part of our day-to-day activity considered as <strong>Kottan</strong>. Because of volontier nature, we pretty flexible and number of people can change - some can come, other - go. </p>
-                      <p> Also we have Core, which consists from most active ones. To become one of Core, one must take responsibility on itself, generate ideas and be active part of our community. </p>
+                      <p> Anyone who finished courses and participates in our day-to-day activities is considered a <strong>Kottan</strong>. Because of our volunteer nature, we are pretty flexible and the number of people changes constantly - some can come, others - go. </p>
+                      <p> Also, we have a Core team, which consists of most active community members. To become one of Core, one must take responsibility, generate ideas and be an active part of our community </p>
                     </div>
                     <div id="tab-guest" class="core__tabsContent js-core__tabsContent tab-guest core__tabsContent--guest">
-                      <p> Guest mentors is participants which comes to us to read lectures, conduct a workshop or else. Usually, we trying to find mentor according to level of knowledge level of lecture. </p>
-                      <p> So even if you a beginner - anyway you know more, then trainees or students, who don't know nothing at all. Also, you closer to problems of newbies, because you haven't forgot how it is. :) </p>
+                      <p> Guest mentors are participants who come to us to read lectures, conduct a workshop or other learning activities. New guest mentors are always welcome! Don't be discouraged if you consider yourself a beginner. Usually, we try to match mentor's level and audience's level. </p>
+                      <p> So even as a beginner, you already know more, than trainees or students, who know nothing at all. Also, you are closer to problems of newbies, because you haven't forgotten what it was like to figure them out :) </p>
                     </div>
                   </div>
                 </div>
@@ -747,7 +719,7 @@
                 <div class="core__slogan">
                   <p> If you feel the strength to share knowledge with others, come join us </p>
                   <div class="header__contact">
-                    <a href="mailto:kottans.org@gmail.com" class="header__contactLink">Join the kottans</a>
+                    <a href="mailto:kottans.org@gmail.com" class="header__contactLink">Join Kottans</a>
                   </div>
                 </div>
                 <div class="core__member">
@@ -806,14 +778,14 @@
                     <div class="mentor__wrapper">
                       <nav id="mentor__nav" class="mentor__nav">
                         <div id="mentor___nav-contents" class="mentor__nav-contents">
-                          <p class="mentor__nav-link" aria-selected="true" data-tab="mentor__2018">2019-2018</p>
-                          <p class="mentor__nav-link" data-tab="mentor__2017">2018-2017</p>
-                          <p class="mentor__nav-link" data-tab="mentor__2016">2017-2016</p>
-                          <p class="mentor__nav-link" data-tab="mentor__2015">2016-2015</p>
-                          <p class="mentor__nav-link" data-tab="mentor__2014">2015-2014</p>
-                          <p class="mentor__nav-link" data-tab="mentor__2013">2014-2013</p>
-                          <p class="mentor__nav-link" data-tab="mentor__2012">2013-2012</p>
-                          <p class="mentor__nav-link" data-tab="mentor__2011">2012-2011</p>
+                          <p class="mentor__nav-link" aria-selected="true" data-tab="mentor__2018">2018-2019</p>
+                          <p class="mentor__nav-link" data-tab="mentor__2017">2017-2018</p>
+                          <p class="mentor__nav-link" data-tab="mentor__2016">2016-2017</p>
+                          <p class="mentor__nav-link" data-tab="mentor__2015">2015-2016</p>
+                          <p class="mentor__nav-link" data-tab="mentor__2014">2014-2015</p>
+                          <p class="mentor__nav-link" data-tab="mentor__2013">2013-2014</p>
+                          <p class="mentor__nav-link" data-tab="mentor__2012">2013-2013</p>
+                          <p class="mentor__nav-link" data-tab="mentor__2011">2011-2012</p>
                           <p id="mentor__indicator-pn" class="mentor__nav-indicator"></p>
                         </div>
                       </nav>
@@ -2964,25 +2936,20 @@
             </div>
           </div>
         </section>
-        <section class="section section--review" id="review">
+        <section class="section section--review" id="reviews">
           <div class="container">
             <aside class="section__sidebar">
               <div class="sidebar--content">
                 <h2>
-                  <p>
-                    <span>Reviews</span>
-                    <span>from</span>
-                  </p>
-                  <p>graduates</p>
+                  <a class="anchor" href="#reviews">
+                    <p>
+                      <span>Reviews</span>
+                      <span>from</span>
+                    </p>
+                    <p>graduates</p>
+                  </a>
                 </h2>
                 <nav class="menu">
-                  <div class="hamburgerWrapper">
-                    <button class="hamburger" id="hamburger">
-                      <span class="hamburger__item"></span>
-                      <span class="hamburger__item"></span>
-                      <span class="hamburger__item"></span>
-                    </button>
-                  </div>
                   <ul class="menu__list js-menu__list" aria-role="list">
                     <li class="menu__item" data-item-parent="hero">
                       <a href="#hero" class="menu__link">Hello World</a>
@@ -3002,8 +2969,8 @@
                     <li class="menu__item" data-item-parent="core">
                       <a href="#core" class="menu__link">Kottans core</a>
                     </li>
-                    <li class="menu__item" data-item-parent="review">
-                      <a href="#review" class="menu__link">Reviews from graduates</a>
+                    <li class="menu__item" data-item-parent="reviews">
+                      <a href="#reviews" class="menu__link">Reviews from graduates</a>
                     </li>
                     <li class="menu__item" data-item-parent="partners">
                       <a href="#partners" class="menu__link">Our friends &amp; partners</a>
@@ -3037,7 +3004,7 @@
                         <img src="img/alumni/MaryFedirko.jpg" alt="Mary Fedirko}" class="review__avatar">
                       </div>
                       <div class="review__textWrapper">
-                        <p class="review__text"> Recently I finished an interview task and thought to myself: could I even imagine a few months ago myself being able to maek something like that? A wonderful feeling, I must say. The work was truly hard, and it will remain hard in the future. However if you progress at least in baby steps and with every step become better than your previous self, it&#39;s worth it. </p>
+                        <p class="review__text"> Recently I finished an interview task and thought to myself: could I even imagine a few months ago myself being able to make something like that? A wonderful feeling, I must say. The work was truly hard, and it will remain hard in the future. However if you progress at least in baby steps and with every step become better than your previous self, it&#39;s worth it. </p>
                         <p class="review__text"> I wanted to join Kottans 2 years ago, but I thought it was too early for me and I would not make it, I thought I needed work experience first... But time passed, and no particular experience or knowledge appeared) because the right time is here and now. Until you try, you do not know what you really are capable of and in what direction you want to go. Kottans offer not only cool courses, but it’s also a community, it&#39;s a whole subculture. There is no such thing as a dumb question here. Here you can both study and teach others, each time discovering new nuances of seemingly clear things. </p>
                         <p class="review__text"> The course mentors deserve special mention. They are people you respect, admire and on which you really want to be like, when you grow up)) Who else would explain seemingly obvious things to an unknown person several times without losing self-control? :) Things like this are very motivating. It&#39;s awesome to learn from those who believe that quality knowledge is not a business, but a way to make the IT industry well developed, more successful and productive. You are cool, Kottans! Thank you! </p>
                         <p class="review__name"> Mary Fedirko </p>
@@ -3097,24 +3064,26 @@
           <div class="container">
             <aside class="section__sidebar">
               <h2>
-                <span>Our</span>
-                <span>friends</span>
-                <span>& partners</span>
+                <a class="anchor" href="#partners">
+                  <span>Our</span>
+                  <span>friends</span>
+                  <span>& partners</span>
+                </a>
               </h2>
             </aside>
             <div class="section__content">
               <div class="partners">
                 <div class="partners__list">
-                  <a href="#" class="partners__item">
+                  <a href="https://star.global/" class="partners__item">
                     <img src="img/partners/star.svg" alt="Star" class="partners__image">
                   </a>
-                  <a href="#" class="partners__item">
+                  <a href="https://railsreactor.com/" class="partners__item">
                     <img src="img/partners/rails_reactor.svg" alt="Rails Reactor" class="partners__image">
                   </a>
-                  <a href="#" class="partners__item">
+                  <a href="https://www.levi9.com/" class="partners__item">
                     <img src="img/partners/levi9.png" alt="Levi9" class="partners__image">
                   </a>
-                  <a href="#" class="partners__item">
+                  <a href="https://www.wix.com/" class="partners__item">
                     <img src="img/partners/wix.svg" alt="WIX" class="partners__image">
                   </a>
                 </div>
@@ -3152,7 +3121,7 @@
             </a>
           </div>
           <div class="footer__copyright">
-            <span> Copyright © 2019 Kottans | Designed by <a href="https://www.behance.net/illyarusanov">Illya Rusanov</a>
+            <span> Copyright © 2020 Kottans | Designed by <a href="https://www.behance.net/illyarusanov">Illya Rusanov</a>
             </span>
           </div>
           <div class="footer__socials">
