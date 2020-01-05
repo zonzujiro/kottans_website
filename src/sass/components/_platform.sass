@@ -23,20 +23,24 @@
 		width: 140px
 		height: 150px
 		margin: 20px
-
-	&:hover
 		border-color: $dark
 		filter: grayscale(0)
 		opacity: 1
 
-		.community__description
-			display: inline
-			text-decoration: none
-			color: $dark
-			text-align: center
-			margin: 20px
+	@media not all and (hover: none)
+		&:hover
+			border-color: $dark
+			filter: grayscale(0)
 			opacity: 1
-			position: relative
+
+			.community__description
+				display: inline
+				text-decoration: none
+				color: $dark
+				text-align: center
+				margin: 20px
+				opacity: 1
+				position: relative
 
 	.community__logo
 		height: auto

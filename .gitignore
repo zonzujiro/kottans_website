@@ -34,4 +34,4 @@ yarn.lock
 _tmp
 node_modules
 bower_components
-build
+build/
