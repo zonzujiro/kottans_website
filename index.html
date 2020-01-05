@@ -197,7 +197,7 @@
                       <span>> Knowledge must be shared</span>
                     </div>
                   </div>
-                  <div class="about__text js-about__text">
+                  <div class="about__text js-about__text collapsed__text" data-collapsed-text="readMore-about">
                     <h3 class="about__textTitle"> We are community of developers that love to code and help each other. </h3>
                     <p>We are looking for smart, friendly, self-directed and intellectually curious people who enjoy programming and want to get significantly better.</p>
                     <p>We are passionate about programming and think that everybody can pick it up or switch to the different field at any time they want, given some amount of motivation, dedication and hard work.</p>
@@ -206,7 +206,7 @@
                     <p>Our initiative is community driven, making it super-flexible in terms of adapting to what students want while keeping in mind the main idea - learn something new and do it in the fun way, creating something meaningful along the way.</p>
                   </div>
                   <div class="buttonWrapper">
-                    <button class="header__contact" id="readMore-about"> read more </button>
+                    <button class="read-more" data-parent="readMore-about"> read more </button>
                   </div>
                 </div>
               </div>
@@ -2983,7 +2983,7 @@
                   <div class="review__text">
                     <h3>What People are Saying</h3>
                   </div>
-                  <div class="review__feed">
+                  <div class="review__feed collapsed__text" data-collapsed-text="reviews">
                     <div class="review__item" data-id="1">
                       <div class="review__avatarWrapper">
                         <img src="img/alumni/AnnaStepashko.jpg" alt="Anna Stepashko}" class="review__avatar">
@@ -3045,13 +3045,9 @@
                   </div>
                 </div>
                 <div class="review__feedPagination">
-                  <button class="review__button review__button--prev"></button>
-                  <ul>
-                    <li>01</li>
-                    <li class="review__current">01</li>
-                    <li>05</li>
-                  </ul>
-                  <button class="review__button review__button--next"></button>
+                  <div class="buttonWrapper">
+                    <button class="read-more" data-parent="reviews"> Read more </button>
+                  </div>
                 </div>
               </div>
             </div>
